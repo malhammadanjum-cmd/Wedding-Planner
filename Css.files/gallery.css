@@ -1,0 +1,498 @@
+   * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .navbar {
+        background-color: #ffffff;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+    width: 170px;          
+    height: 100px;
+    padding: 10px;
+    }
+
+   
+    .logo img {
+    width: 90%;           
+    height: 100%; 
+   }
+
+
+        .nav-links {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        }
+
+        .nav-links a {
+        text-decoration: none;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 17px;
+        font-size: 17px;
+        color: black;
+        font-weight: bold;
+        transition: transform 0.3s ;
+    }
+
+       .nav-links a:hover {
+        color: darkcyan;
+        transform: scale(1.1); 
+        position: relative;
+
+    }
+
+       .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+       .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 1;
+        top: 100%;
+        left: 0;
+    }
+
+       .dropdown-content a {
+        padding: 12px 16px;
+        font-weight: normal;
+        display: block;
+        font-size: 15px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+       #check {
+        display: none;
+    }
+
+       .checkbtn {
+        font-size: 25px;
+        color: #333;
+        cursor: pointer;
+        display: none;
+    }
+
+@media (max-width: 950px) {
+    .checkbtn {
+        display: block; 
+    }
+
+    .nav-links {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #ffffff;
+        top: 60px;
+        left: -100%; 
+        text-align: left;
+        flex-direction: column;
+        padding: 20px 5%;
+        gap: 10px;
+        transition: 0.5s;
+        overflow-y: auto;
+        display: flex;
+    }
+
+    #check:checked ~ .nav-links {
+        left: 0;
+    }
+
+    .dropdown {
+        width: 100%;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none; 
+        box-shadow: none;
+        padding-left: 20px;
+        background-color: #f9f9f9;
+        width: 100%;
+    }
+
+    .dropdown:focus-within .dropdown-content {
+        display: block;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+    }
+}
+
+
+
+    .Gallery{
+        padding-top: 60px;
+    }
+
+    .pagename{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .images{
+       height: auto;
+       width: auto;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+
+}
+
+
+    .image1 ,.image2{
+        height: 400px;   
+        width: 600px;   
+        margin-top: 80px; 
+        background-size: cover;
+        border: 1px solid #f9f9f9;
+        border-radius: 20px;
+    }
+     
+     .image1{
+        background-image: url(https://images.pexels.com/photos/169189/pexels-photo-169189.jpeg?cs=srgb&dl=pexels-asadphoto-169189.jpg&fm=jpg);
+    }
+
+    .image2{
+        background-image:   url(https://media.istockphoto.com/id/497039777/photo/wedding-setting.jpg?s=612x612&w=0&k=20&c=uHwz_57iBRVXrUPacCiLTuTPYyZS1az9GA0sCDeMP5U=);
+    }
+
+
+    .image3, .image4, .image5  , .image6 , .image7 , .image8 , .image9 , .image10  , .image10  , .image11  , .image12  , .image13   , .image14   , .image15     , .image16    , .image17     , .image18     , .image19      , .image20      , .image21      , .image22      , .image23     , .image24      , .image25       , .image26     , .image27       , .image28    , .image29      , .image30      , .image31      , .image32       , .image33       , .image34       , .image35       , .image36    , .image37      , .image38     , .image39 , .image40      , .image41      , .image42, .image43   , .image44   , .image45    , .image46    , .image47   , .image48    , .image49    , .image50 , .image51 , .image52 {
+        height: 400px;  
+        width: 600px;   
+        background-size: cover;
+        border: 1px solid #f9f9f9;
+        border-radius: 20px;
+    }
+
+
+    
+    .image3{
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20230902/pngtree-beautiful-wedding-venue-decorated-in-white-with-yellow-flowers-image_13158716.jpg);
+    }
+
+    .image4{
+        background-image: url(https://media-api.xogrp.com/images/679ea6d9-afda-45f0-a46b-86e33e36e83a);
+    }
+
+    .image5{
+        background-image: url(https://grandtuscanyballroom.com/wp-content/uploads/2024/02/Photo312-min-scaled-1.jpg);
+    }
+
+
+    .image6{
+        background-image: url(https://media.istockphoto.com/id/471906412/photo/beautiful-table-setting-for-an-wedding-reception-or-an-event.jpg?s=612x612&w=0&k=20&c=knlIBspy-ZKuQV7bUVr_eclJmyC24ShNAva_Jh9Rwfc=);
+    }
+
+
+
+    .image7{
+        background-image: url(https://www.wedding-spot.com/blog/sites/wsblog/files/styles/webp_desktop/public/images/migrated/78-Fitroy%2Bwedding%2Bvenue.jpg.webp?itok=vg-DX6bK);
+    }
+
+
+    .image8{
+        background-image: url(https://plus.unsplash.com/premium_photo-1661907977530-eb64ddbfb88a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VkZGluZyUyMGhhbGx8ZW58MHx8MHx8fDA%3D0);
+    }
+
+
+
+    .image9{
+        background-image: url(https://thumbs.dreamstime.com/b/elegant-wedding-reception-setup-beautifully-decorated-venue-arranged-tables-floral-centerpieces-set-up-soft-405922475.jpg);
+    }
+
+
+
+    .image10{
+        background-image: url(https://castlehotelwindsor.com/wp-content/uploads/2024/02/Carly-Rood-wedding-breakfast-in-the-Windsor-Suite-The-Castle-Hotel-1920x1133.webp);
+    }
+
+    .image11{
+        background-image: url(https://www.wedinspire.com/wp-content/uploads/2023/07/How-to-Compare-Wedding-Venues-1.jpg);
+    }
+
+
+    .image12{
+        background-image: url(https://img.partyslate.com/companies-cover-image/51401/image-8efa41b2-439f-47ba-aa40-f353f2c3c5b8.jpg);
+    }
+    .image13{
+        background-image: url(https://cdn0.hitched.co.uk/vendor/6283/3_2/960/jpeg/image1_4_196283-168932844195230.jpeg);
+    }
+    .image14{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRplTGdzvD8kB1ltsntSxOn3h6vayT3qpiG5A&s);
+    }
+    .image14{
+        background-image: url(https://media.weddingz.in/images/7941daefa912e70969e8804792325945/top-5-outdoor-wedding-venues-in-gurgaon-for-you-to-get-married-in.jpg);
+    }
+    .image15{
+        background-image: url(https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/destination-weddings-travel-group/73004-ocean-riviera-paradise/aioapi/ocean-riviera-paradise-daisy-terrace-wedding-venue.jpeg?cropX=193&cropW=3115&cropH=2336);
+    }
+    .image16{
+        background-image: url(https://img.freepik.com/free-photo/photorealistic-wedding-venue-with-intricate-decor-ornaments_23-2151481506.jpg);
+    }
+    .image17{
+        background-image: url(https://media.cntraveler.com/photos/56e0811762c2faba1dda7045/master/pass/peabody-opera-house-wedding-cr-mnc-photography.jpg);
+    }
+    .image18{
+        background-image: url(https://cdn0.weddingwire.com/vendor/816005/3_2/960/jpg/dsc04043_51_500618-168814800463840.jpeg);
+    }
+    .image19{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3B5fjiJT1cjZ6n8Dv01ATfL3Uznv--am2UA&s);
+    }
+    .image20{
+        background-image: url(https://cdn0.weddingwire.com/vendor/157755/3_2/960/jpg/gold-white-chair-covers-ballroom_51_557751-166042455193668.jpeg);
+    }
+    .image21{
+        background-image: url(https://images.pexels.com/photos/1035665/pexels-photo-1035665.jpeg?cs=srgb&dl=pexels-jeremy-wong-382920-1035665.jpg&fm=jpg);
+    }
+    .image22{
+        background-image: url(https://static.showit.co/1200/k8ycnsekxu2_MM3zvJctYw/193517/3t0a6702.jpg);
+    }
+    .image23{
+        background-image: url(https://images.squarespace-cdn.com/content/v1/5b105551b27e39cee568415e/1549886336979-ZV8OWA6EN3LUIRBKYTX3/image_%281%29.png?format=1000w);
+    }
+    .image24{
+        background-image: url(https://www.tagvenue.com/images/location-pages/1920x1080/2318.jpg);
+    }
+
+    .image25{
+        background-image: url(https://cdn0.weddingwire.com/vendor/949231/3_2/1280/jpg/bixby-white-and-ghost-chairs_51_132949-173868706848322.jpeg);
+    }
+    .image26{
+        background-image: url(https://media.istockphoto.com/id/160985444/photo/wedding-event-decorations.jpg?s=612x612&w=0&k=20&c=NEIxzLRkoryINIRbVhvUsAxOOo3hV-byfB-zDwHIcA4=);
+    }
+    .image27{
+        background-image: url(https://www.ashyanacatering.com/wp-content/uploads/2020/05/renaissance-schaumburg-Indian-wedding-catering.jpg);
+    }
+    .image28{
+        background-image: url(https://media-api.xogrp.com/images/aaf4078b-aec0-43c6-85ef-2fff86145be4~rs_768.h-cr_69.0.1172.827);
+    }
+    .image29{
+        background-image: url(https://www.tagvenue.com/images/location-pages/1920x1080/1918.jpg);
+    }
+    .image30{
+        background-image: url(https://cdn0.weddingwire.com/vendor/131000/3_2/640/jpg/dx2-5537_51_131-161125198329432.jpeg);
+    }
+    .image31{
+        background-image: url(https://cdn0.weddingwire.com/vendor/679836/3_2/1280/jpg/1467126287389-laurenweswed-882.jpeg);
+    }
+    .image32{
+        background-image: url(https://media.cntraveler.com/photos/56d893cb3be7bc2f3e605e4a/16:9/w_1280,c_limit/old-edwards-inn-wedding-cr-courtesy.jpg);
+    }
+    .image33{
+        background-image: url(https://media.architecturaldigest.com/photos/66018283cd71d208d8501c6f/16:9/w_2560%2Cc_limit/Allee-Ceremonie2.jpg);
+    }
+    .image34{
+        background-image: url(https://img1.wsimg.com/isteam/ip/b2706888-22db-4069-8317-8c8e3b3c4522/IMG_0757.jpeg);
+    }
+    .image35{
+        background-image: url(https://www.labanquets.com/galleries/jewish-outdoor-ceremonies/outdoor-2.jpg);
+    }
+    .image36{
+        background-image: url(https://vb-events.com/wp-content/uploads/2024/09/Luxury-wedding-ideas.jpg);
+    }
+    .image37{
+        background-image: url(https://extralearning.org/wp-content/uploads/2025/10/St_John_Event_Center_-__01_-_10_-2025.jpg);
+    }
+    .image38{
+        background-image: url(https://images.pexels.com/photos/30311728/pexels-photo-30311728.jpeg?cs=srgb&dl=pexels-simeart-30311728.jpg&fm=jpg);
+    }
+    .image39{
+        background-image: url(https://media.istockphoto.com/id/578088264/photo/wedding-hall-or-other-function-facility-set-for-fine-dining.jpg?s=612x612&w=0&k=20&c=YkDtw5dyLM_2q-4R1MIzRE5BJ8wcUXowDxN3WH_gZ_0=);
+    }
+    .image40{
+        background-image: url(https://media.istockphoto.com/id/584573082/photo/wedding-hall-or-other-function-facility-set-for-fine-dining.jpg?s=612x612&w=0&k=20&c=Ox9T0JIeGaCXPs_EEoAy5Uc98mY_kCnP9pTz06tb6iI=);
+    }
+    .image41{
+        background-image: url(https://thumbs.dreamstime.com/b/karachi-pakistan-january-luxurious-wedding-hall-decoration-banquet-interior-design-306983926.jpg);
+    }
+    .image42{
+        background-image: url(https://thumbs.dreamstime.com/b/karachi-pakistan-january-luxurious-wedding-hall-decoration-banquet-interior-design-306983931.jpg);
+    }
+    .image43{
+        background-image: url(https://images.unsplash.com/photo-1542665952-14513db15293?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2VkZGluZyUyMGhhbGx8ZW58MHx8MHx8fDA%3D);
+    }
+    .image44{
+        background-image: url(https://images.pexels.com/photos/33914530/pexels-photo-33914530.jpeg?cs=srgb&dl=pexels-thevisionaryvows-33914530.jpg&fm=jpg);
+    }
+    .image45{
+        background-image: url(https://images.unsplash.com/photo-1675808414213-2b7c7daabf51?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHdlZGRpbmclMjBoYWxsfGVufDB8fDB8fHww);
+    }
+    .image46{
+        background-image: url(https://static.vecteezy.com/system/resources/thumbnails/006/592/206/small/festive-table-decorated-with-composition-of-white-red-and-pink-flowers-and-greenery-in-the-banquet-hall-photo.jpg);
+    }
+    .image47{
+        background-image: url(https://thumbs.dreamstime.com/b/long-festive-table-served-dishes-decorated-branches-greenery-wedding-banquet-long-festive-table-served-dishes-97548549.jpg);
+    }
+    .image48{
+        background-image: url(https://img.freepik.com/premium-photo/tableware-glasses-flower-fork-knife-served-dinner-restaurant-with-cozy-interior_73492-948.jpg);
+    }
+    .image49{
+        background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20240410/pngtree-decorated-wedding-banquet-hall-in-classic-style-image_15652248.jpg);
+    }
+    .image50{
+        background-image: url(https://t3.ftcdn.net/jpg/04/68/16/54/360_F_468165400_3bVUSfnbMs0a21NrwVeayn4L336z10rZ.jpg);
+    }
+     .image51{
+        background-image: url(https://tulipsevents.com/wp-content/uploads/2025/08/Tulips-Events-Management-Wedding-Venue-in-Lahore-7.jpg);
+    }
+     .image52{
+        background-image: url(https://media.istockphoto.com/id/1488540550/photo/festive-tables-with-flower-composition-on-black-tablecloth-and-chairs-for-guests-wedding-set.jpg?s=612x612&w=0&k=20&c=omO8BhU5jAsjPW-2-rDwtvnO_sEA5BBUXYVwPYM6Stg=);
+    }
+    
+    .footer {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+     .footerlogo {
+    width: 200px;          
+    height: 120px;
+   }
+
+    .footerlogo img {
+    width: 90%;         
+    height: 100%;
+    
+   }
+
+
+    .footercontent {
+    display: flex;
+    width: 80%;  
+    margin-bottom: 20px; 
+}
+
+    .footeritem {
+    flex: 1;
+    padding-top: 30px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.9;
+    margin-left: 40px;
+}
+
+    .footeritem a{
+    text-decoration: none;
+    color: lightblue;
+    transition: 0.3s;
+
+}
+
+   .footeritem a:hover{
+    color: #e8c17c;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+    .footeritem:hover {
+    cursor: pointer;
+}
+
+    .copyright {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 17px;
+    color: #888;
+    margin-top: 20px;
+}
+
+hr{
+ width: 80%;
+ border: 1px solid  white;
+ opacity: 0.3;
+ 
+}
+
+@media (max-width: 768px) {
+    
+    .pagename {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px;
+    }
+
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10,
+    .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20,
+    .image21, .image22, .image23, .image24, .image25, .image26, .image27, .image28, .image29, .image30,
+    .image31, .image32, .image33, .image34, .image35, .image36, .image37, .image38, .image39, .image40,
+    .image41, .image42, .image43, .image44, .image45, .image46, .image47, .image48, .image49, .image50, 
+    .image51, .image52 {
+        width: 95%;      
+        height: 250px;  
+        margin-top: 20px; 
+        margin-left: 0;
+        border-radius: 15px; 
+    }
+
+    .footercontent {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footeritem {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .brandname h1 {
+        font-size: 28px;
+    }
+
+    hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10,
+    .image11, .image12, .image13, .image14, .image15, .image16, .image17, .image18, .image19, .image20,
+    .image21, .image22, .image23, .image24, .image25, .image26, .image27, .image28, .image29, .image30,
+    .image31, .image32, .image33, .image34, .image35, .image36, .image37, .image38, .image39, .image40,
+    .image41, .image42, .image43, .image44, .image45, .image46, .image47, .image48, .image49, .image50, 
+    .image51, .image52 {
+        height: 200px; 
+    }
+}
